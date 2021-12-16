@@ -1,0 +1,14 @@
+#!/bin/sh
+case "$1" in
+  start)
+	/usr/bin/fa-fancontrol.sh &
+	;;
+  stop)
+		printf " "
+        ;;
+  *)
+        echo "Usage: $0 {start|stop}"
+        exit 1
+        ;;
+esac
+exit 0
